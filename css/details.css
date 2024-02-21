@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--grey);
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#ecommerce {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 42px;
+}
+
+.details-card {
+    background-color: rgb(202, 221, 227);
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.detail img {
+    width: 60px;
+    height: 60px;
+}
+
+.detail p {
+    width: 80%;
+    margin-top: 6px;
+}
+
+.install-details {
+    /* width: 100%; */
+    font-weight: 400;
+}
+
+.install-details button {
+    padding: 4px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    background-color: #1775F1;
+    color: white;
+}
+
+.install-details span {
+    margin-top: 4px;
+    display: inline-block;
+    color: #1775F1;
+    font-weight: 600;
+}
+.review{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.star-icon {
+    font-size: 20px; 
+    color: #FFD700; 
+}
+/* popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    height:500px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+    padding: 0; 
+    position: relative;
+    bottom: 110px;
+}
+
+.tabContainer .buttonContainer {
+    flex: 0 0 15%;
+    display: flex;
+}
+
+.tabContainer .buttonContainer button {
+    flex: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 35px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+}
+
+.tabContainer .buttonContainer button:hover {
+    background-color: #d7d4d4;
+}
+
+.tabContainer .tabPanel {
+    flex: 1;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
+    height: 100%;
+}
+.close-btn{
+    padding: 12px;
+    background-color: red;
+    width: 80px;
+    margin-left: 7px;
+    position: relative;
+    top: 90px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+@media screen and (max-width: 576px) {
+    #ecommerce {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .details {
+        display: block;
+
+    }
+
+    .detail {
+        display: block;
+    }
+
+    .install-details {
+        margin-top: 18px;
+
+    }
+
+    .detail p {
+        width: 100%;
+    }
+    .review{
+        display: grid;
+        grid-template-columns: repeat(1. 1fr);
+        gap:10px;
+    }
+    .popup {
+        width: 90%;
+        max-width: none; 
+    }
+
+    .tabContainer .buttonContainer button {
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #ecommerce {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 970px) {
+    .details {
+        display: block;
+
+    }
+
+    .detail {
+        display: block;
+    }
+
+    .install-details {
+        margin-top: 18px;
+
+    }
+
+    .detail p {
+        width: 100%;
+    }
+    .review{
+        display: grid;
+        grid-template-columns: repeat(1. 1fr);
+        gap:10px;
+    }
+}

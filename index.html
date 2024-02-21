@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>AdminSite</title>
+</head>
+
+<body>
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<div class="brand">
+			<a href="#" style="display: flex; align-items: center; color: rgb(243, 230, 230);"> <i
+					class="material-icons-outlined icon">store</i>Store</a>
+			<span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+		</div>
+		<ul class="side-menu">
+			<li onclick="showDashboard()"><a href="/" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a>
+			</li>
+			<li onclick="showEcommerce()"><a href="#" class="active"> <i
+						class="material-icons-outlined icon">shopping_cart</i>
+					E-commerce  <i class="material-icons-outlined icon-right">lock</i></a></li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' style="color: #fff;"></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon'></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' style="color: #fff;"></i>
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+					alt="">
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div id="dashboard">
+				<h2>Dashboard</h2>
+			</div>
+			<div id="ecommerce" style="display: none;">
+				<div class="toggle">
+					<span class="yearly" style="font-size: 18px; font-weight: 700;">Billed Yearly </span>
+					<div class="toggle-button-cover">
+						<div class="button-cover">
+							<div class="button r" id="button-1">
+								<input type="checkbox" class="checkbox" />
+								<div class="knobs"></div>
+								<div class="layer"></div>
+							</div>
+						</div>
+					</div>
+					<span class="monthly" style="font-size: 18px; font-weight: 700;">Billed Monthly</span>
+				</div>
+				<!-- card data -->
+				<div class="data-info">
+					<div class="card">
+						<h4>Startup</h4>
+						<h1>৳00</h1>
+						<span>per user, per month</span>
+						<a href="details.html?fromEcommerce=true">
+							<p class="start-btn">Start My 15-day Trial</p>
+						</a>
+						<hr style="border-color: 1px solid; width: 80%; margin: 0 auto;">
+						</hr>
+						<p class="para">
+							5 Social Profiles 5 Scheduled Posts Per Profile 400+ Templates Calendar View 24/7 Support.
+						</p>
+					</div>
+					<div class="card">
+						<h4>Business</h4>
+						<h1>৳300</h1>
+						<span>per user, per month</span>
+						<a href="details.html?fromEcommerce=true">
+							<p class="start-btn">Start My 15-day Trial</p>
+						</a>
+						<hr style="border-color: 1px solid; width: 80%; margin: 0 auto;">
+						</hr>
+						<p class="para">
+							10 Social Profiles 25 Scheduled Posts Per Profile 400+ Templates Calendar View 24/7 VIP
+							Support.
+						</p>
+					</div>
+					<div class="card">
+						<h4>Agency</h4>
+						<h1>৳500</h1>
+						<span>per user, per month</span>
+						<a href="details.html?fromEcommerce=true">
+							<p class="start-btn">Start My 15-day Trial</p>
+						</a>
+						<hr style="border-color: 1px solid; width: 80%; margin: 0 auto;">
+						</hr>
+						<p class="para">
+							100 Social Profiles 100 Scheduled Posts Per Profile 400+ Templates Calendar View 24/7
+							Support.
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

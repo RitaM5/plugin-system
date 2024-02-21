@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/details.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <div class="brand">
+            <a href="#" style="display: flex; align-items: center; color: rgb(243, 230, 230);"> <i
+                    class="material-icons-outlined icon">store</i>Store</a>
+            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+        <ul class="side-menu">
+            <li onclick="showEcommerce()"><a href="#" class="active"> <i
+                        class="material-icons-outlined icon">shopping_cart</i>
+                    E-commerce <i id="iconPlaceholder" class="material-icons-outlined icon-right">lock</i> </a></li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu toggle-sidebar' style="color: #fff;"></i>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Search...">
+                    <i class='bx bx-search icon'></i>
+                </div>
+            </form>
+            <a href="#" class="nav-link">
+                <i class='bx bxs-bell icon' style="color: #fff;"></i>
+            </a>
+            <span class="divider"></span>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+            <p style="font-size: 18px; text-align: center;">Your Package Ex-pair <span
+                    style="font-weight: 600;">12-3-2024</span></p>
+            <div id="ecommerce">
+                <div class="details-card">
+                    <div class="details">
+                        <div class="detail">
+                            <img src="./img/User Shield.png" alt="" srcset="">
+                            <div>
+                                <h3>Product</h3>
+                                <p>
+                                    This is admin list if you this
+                                    Plugin then you Can Create
+                                    Admin and role.This is admin
+                                    list if you this Plugin then you
+                                    Can Create Admin and role
+                                </p>
+                            </div>
+                        </div>
+                        <div class="install-details">
+                            <button>Install Now</button></br>
+                            <span onclick="showPopup()">More Details</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <spa style="font-size: 14px;">(10 Review)</spa>
+                            </div>
+                            <p style="font-size: 15px; margin-top: 3px;">10k Active Install</p>
+                        </div>
+                        <div>
+                            <p style="color: rgb(63, 62, 62); font-size: 15px;">Update: 12/8/2023</p>
+                            <p style="font-weight: 500;">Develop by <span
+                                    style="color: #1775F1; font-size: 15px;">Multipurc</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="details">
+                        <div class="detail">
+                            <img src="./img/User Shield.png" alt="" srcset="">
+                            <div>
+                                <h3>Sells Report </h3>
+                                <p>
+                                    This is admin list if you this
+                                    Plugin then you Can Create
+                                    Admin and role.This is admin
+                                    list if you this Plugin then you
+                                    Can Create Admin and role
+                                </p>
+                            </div>
+                        </div>
+                        <div class="install-details">
+                            <button>Install Now</button></br>
+                            <span onclick="showPopup()">More Details</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <spa style="font-size: 14px;">(10 Review)</spa>
+                            </div>
+                            <p style="font-size: 15px; margin-top: 3px;">10k Active Install</p>
+                        </div>
+                        <div>
+                            <p style="color: rgb(63, 62, 62); font-size: 15px;">Update: 12/8/2023</p>
+                            <p style="font-weight: 500;">Develop by <span
+                                    style="color: #1775F1; font-size: 15px;">Multipurc</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="details">
+                        <div class="detail">
+                            <img src="./img/User Shield.png" alt="" srcset="">
+                            <div>
+                                <h3>Coupon </h3>
+                                <p>
+                                    This is admin list if you this
+                                    Plugin then you Can Create
+                                    Admin and role.This is admin
+                                    list if you this Plugin then you
+                                    Can Create Admin and role
+                                </p>
+                            </div>
+                        </div>
+                        <div class="install-details">
+                            <button>Install Now</button></br>
+                            <span onclick="showPopup()">More Details</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <spa style="font-size: 14px;">(10 Review)</spa>
+                            </div>
+                            <p style="font-size: 15px; margin-top: 3px;">10k Active Install</p>
+                        </div>
+                        <div>
+                            <p style="color: rgb(63, 62, 62); font-size: 15px;">Update: 12/8/2023</p>
+                            <p style="font-weight: 500;">Develop by <span
+                                    style="color: #1775F1; font-size: 15px;">Multipurc</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="details">
+                        <div class="detail">
+                            <img src="./img/User Shield.png" alt="" srcset="">
+                            <div>
+                                <h3>Page </h3>
+                                <p>
+                                    This is admin list if you this
+                                    Plugin then you Can Create
+                                    Admin and role.This is admin
+                                    list if you this Plugin then you
+                                    Can Create Admin and role
+                                </p>
+                            </div>
+                        </div>
+                        <div class="install-details">
+                            <button>Install Now</button></br>
+                            <span onclick="showPopup()">More Details</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <i class="material-icons-outlined star-icon">star</i>
+                                <spa style="font-size: 14px;">(10 Review)</spa>
+                            </div>
+                            <p style="font-size: 15px; margin-top: 3px;">10k Active Install</p>
+                        </div>
+                        <div>
+                            <p style="color: rgb(63, 62, 62); font-size: 15px;">Update: 12/8/2023</p>
+                            <p style="font-weight: 500;">Develop by <span
+                                    style="color: #1775F1; font-size: 15px;">Multipurc</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Popup HTML -->
+            <div class="popup" id="detailsPopup">           
+                <div class="popup-content">
+                    <div class="tabContainer">
+                        <div class="buttonContainer">
+                            <button onclick="showPanel(0,'#1775F1')">Descrption</button>
+                            <button onclick="showPanel(1,'#1775F1')">FQA</button>
+                            <button onclick="showPanel(2,'#1775F1')">How To USe</button>
+                            <button onclick="showPanel(3,'#1775F1')">Review</button>
+                        </div>
+                        <div class="tabPanel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident excepturi quae fugiat architecto unde, quasi molestiae necessitatibus ipsam mollitia optio! Enim neque iste quidem consequatur minima incidunt obcaecati natus repudiandae?</div>
+                        <div class="tabPanel">sit amet consectetur adipisicing elit. Provident excepturi quae fugiat architecto unde, quasi molestiae necessitatibus ipsam mollitia optio! Enim neque iste quidem consequatur minima incidunt obcaecati natus repudiandae?</div>
+                        <div class="tabPanel">sit amet consectetur adipisicing elit. Provident excepturi quae fugiat architecto unde, quasi molestiae necessitatibus ipsam mollitia optio! Enim neque iste quidem consequatur minima incidunt obcaecati natus repudiandae?</div>
+                        <div class="tabPanel">sit amet consectetur adipisicing elit. Provident excepturi quae fugiat architecto unde, quasi molestiae necessitatibus ipsam mollitia optio! Enim neque iste quidem consequatur minima incidunt obcaecati natus repudiandae?</div>
+                    </div>
+                    <p  class="close-btn" onclick="hidePopup()">Close</p>
+                </div>
+
+            </div>
+        </main>
+        <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
